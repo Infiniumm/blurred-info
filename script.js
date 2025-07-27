@@ -30,8 +30,8 @@ function redirectToStripe(priceKey) {
     const baseUrl = 'https://checkout.stripe.com/c/pay/';
     const params = new URLSearchParams({
         'price': priceId,
-        'success_url': window.location.origin + '/success.html',
-        'cancel_url': window.location.origin + '/cancel.html'
+        'success_url': window.location.origin + '/success',
+        'cancel_url': window.location.origin + '/cancel'
     });
     
     // For demonstration purposes, we'll show an alert
